@@ -1,0 +1,252 @@
+{
+	"id": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+	"name": "qvantel-mart",
+	"description": "",
+	"order": [
+		"ec7ebb16-e560-2c53-c69e-018e82149439",
+		"40899392-8cbb-271a-b876-021f59102cb6",
+		"fc227c9a-0b9a-540f-fd94-47385cef4531",
+		"379dff4b-a3e0-6ebd-81e0-7e08d471b0ea",
+		"daf8107b-f30d-1102-37db-5ce916cc7f7e",
+		"6220cc6d-fc06-0638-2f4a-fe97c896c2e2",
+		"58fd92ab-cf72-905d-7de4-9bcf96829347",
+		"4a00e03e-6b7c-38a5-8120-fac98ea2410a",
+		"9a452655-f571-4115-e23b-9b51bfaeda06"
+	],
+	"folders": [],
+	"timestamp": 1463912640104,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "379dff4b-a3e0-6ebd-81e0-7e08d471b0ea",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/4/3/name",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1463948537411,
+			"name": "paginate products",
+			"description": "",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"responses": []
+		},
+		{
+			"id": "40899392-8cbb-271a-b876-021f59102cb6",
+			"headers": "",
+			"url": "http://localhost:8080/api/products",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": [
+				{
+					"key": "name",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "unitPrice",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "stock",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "save product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463912819138,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4a00e03e-6b7c-38a5-8120-fac98ea2410a",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/?minPrice=25",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": null,
+			"dataMode": "params",
+			"name": "price range morethan",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463949857043,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "58fd92ab-cf72-905d-7de4-9bcf96829347",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/?maxPrice=200&minPrice=5",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": null,
+			"dataMode": "params",
+			"name": "price range between",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463949804211,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6220cc6d-fc06-0638-2f4a-fe97c896c2e2",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/?maxPrice=200",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": null,
+			"dataMode": "params",
+			"name": "price range less than ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463949769091,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9a452655-f571-4115-e23b-9b51bfaeda06",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/search/s/3/369/name",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": null,
+			"dataMode": "params",
+			"name": "Search by name, group by price, sort by name or price",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463955586374,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "daf8107b-f30d-1102-37db-5ce916cc7f7e",
+			"headers": "",
+			"url": "http://localhost:8080/api/catalog/2/50",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1463948557912,
+			"name": "price tange products",
+			"description": "",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"responses": []
+		},
+		{
+			"id": "ec7ebb16-e560-2c53-c69e-018e82149439",
+			"headers": "",
+			"url": "http://localhost:8080/api/products",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": [
+				{
+					"key": "name",
+					"value": "iPhone 5s",
+					"type": "text"
+				},
+				{
+					"key": "unitPrice",
+					"value": "369",
+					"type": "text"
+				},
+				{
+					"key": "stock",
+					"value": "150",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "get products",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463912777815,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fc227c9a-0b9a-540f-fd94-47385cef4531",
+			"headers": "",
+			"url": "http://localhost:8080/api/products/57418b6d4f90d97438f1db7b",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "5ffad28e-be26-1cab-71bb-8394f153f2be",
+			"data": [
+				{
+					"key": "name",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "unitPrice",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "stock",
+					"value": "155",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "update product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463916573730,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
