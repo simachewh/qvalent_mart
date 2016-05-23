@@ -1,7 +1,7 @@
 # qvalent_mart
 Web shop API for Qvantel
 
-### Installation and deployment guide
+### Installation and running guide
 
 Described here is an installation and deployment guide for this simpele API.
 ##### Requirements
