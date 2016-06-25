@@ -13,7 +13,7 @@ var mongoose = require("mongoose");
 var config = require("./config");
 var Product = require("./models/Product");
 var app = express();
-var port = config.port;
+var port = process.env.PORT || config.port;
 
 
 /**
