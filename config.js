@@ -3,6 +3,6 @@
  */
 
 module.exports = {
-    port: process.env.port || 8080,
+    port: Number(process.env.port || 8080),
     database: "mongodb://crm:crm123@ds019990.mlab.com:19990/crm-base"
 }
