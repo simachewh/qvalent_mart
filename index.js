@@ -10,7 +10,7 @@ var bodyParser = require("body-parser");
 var morgan = require("morgan");
 var mongoose = require("mongoose");
 
-var config = require("./config")
+var config = require("./config");
 var Product = require("./models/Product");
 var app = express();
 var port = config.port;
